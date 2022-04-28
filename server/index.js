@@ -21,7 +21,12 @@ rollbar.log(`Hey Man We Are Here`)
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../index.html'))
 })
+let Me = 1
+if(Me != 0){
+  rollbar.info(`guess whos not 0`)
 
+
+}
 
 try {
   nonExistentFunction();
