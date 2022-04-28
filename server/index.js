@@ -12,7 +12,7 @@ var rollbar = new Rollbar({
 })
 
 // record a generic message and send it to Rollbar
-
+Rollbar.log('Hello world!')
 
 
 
