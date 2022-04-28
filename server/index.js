@@ -22,6 +22,21 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../index.html'))
 })
 
+
+try {
+  nonExistentFunction();
+} catch (error) {
+  rollbar.log(error);
+  // expected output: ReferenceError: nonExistentFunction is not defined
+  // Note - error messages will vary depending on browser
+}
+
+
+
+
+
+
+
 const port = process.env.PORT || 4545 
 const lol = 90
 
