@@ -4,6 +4,19 @@ const path = require('path')
 
 const app = express() 
 
+// var Rollbar = require('rollbar')
+// var rollbar = new Rollbar({
+//   accessToken: '17c9883710fa4d0987e35e5de81ad841',
+//   captureUncaught: true,
+//   captureUnhandledRejections: true,
+// })
+
+// record a generic message and send it to Rollbar
+// rollbar.log('Hello world!')
+
+
+
+
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../index.html'))
 })
