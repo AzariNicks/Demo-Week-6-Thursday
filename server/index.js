@@ -25,8 +25,13 @@ let Me = 1
 if(Me != 0){
   rollbar.info(`guess whos not 0`)
 
-
 }
+
+
+
+
+
+
 
 try {
   nonExistentFunction();
