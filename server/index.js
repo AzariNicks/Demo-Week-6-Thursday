@@ -4,7 +4,7 @@ const path = require('path')
 
 const app = express() 
 
-// thing = document.getElementById('Bruh')
+thing = document.getElementById("Bruh")
 // thing.addEventListener('click', () => {console.log('littearky anything')})
 
 
